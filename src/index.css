@@ -4,3 +4,8 @@ body {
   padding: 36px;
   background-color: #F6F9FB;
 }
+
+.container {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}

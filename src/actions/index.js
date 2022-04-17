@@ -1,5 +1,5 @@
 import { ADD_LIST, DELETE_LIST, ADD_ITEM, DELETE_ITEM } from "./types";
-import uuid from "uuid";
+import { v4 as uuid } from "uuid";
 
 export const addItem = (newItem, newItemDesc, listId) => ({
   type: ADD_ITEM,

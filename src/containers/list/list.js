@@ -1,20 +1,12 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
+import AddTodoList from "../../components/addTodoList";
 import "./list.css";
 
 const List = () => {
   const dispatch = useDispatch();
   const lists = useSelector((state) => state.lists);
-
-  const renderEmptyTodoMessage = (
-    <div className="section">
-      <div className="empty-section">
-        You currently have no lists. Today is a great day to start a new todo
-        list!
-      </div>
-    </div>
-  );
 
   return (
     <>
@@ -23,9 +15,10 @@ const List = () => {
           {lists.map((list) => {
             return <List key={list.id} list={list} />;
           })}
+          <p>{`You have ${lists.length} lists.`}</p>
+          <AddTodoList />
         </div>
       </section>
-      {lists.length === 0 ? renderEmptyTodoMessage : null}
     </>
   );
 };

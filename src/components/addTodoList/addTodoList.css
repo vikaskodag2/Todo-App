@@ -1,0 +1,18 @@
+.add-list-card {
+  background: #D6EAF8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-list-card .add-list-input {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.add-list-card .add-list-button {
+  margin: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}

@@ -1,0 +1,53 @@
+import { ADD_LIST, DELETE_LIST, ADD_ITEM, DELETE_ITEM } from "../actions/types";
+
+const listsReducer = (state = [], action) => {
+  switch (action.type) {
+    case ADD_LIST: {
+      const { listId, listTitle } = action.payload;
+      return [
+        {
+          id: listId,
+          title: listTitle,
+          items: [],
+        },
+        ...state,
+      ];
+    }
+
+    case DELETE_LIST: {
+      return [...state].filter((list) => list.id !== action.payload);
+    }
+
+    case ADD_ITEM: {
+      const { newItemId, newItem, newItemDesc, listId } = action.payload;
+
+      return [...state].map((list) => {
+        if (list.id === listId) {
+          list.items.push({
+            id: newItemId,
+            todoItem: newItem,
+            todoItemDesc: newItemDesc,
+          });
+        }
+        return list;
+      });
+    }
+
+    case DELETE_ITEM: {
+      return [...state].map((list) => {
+        const { itemId, listId } = action.payload;
+
+        if (list.id === listId) {
+          list.items = list.items.filter((item) => item.id !== itemId);
+        }
+        return list;
+      });
+    }
+
+    default: {
+      return state;
+    }
+  }
+};
+
+export default listsReducer;

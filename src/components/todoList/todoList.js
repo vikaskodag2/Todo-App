@@ -12,7 +12,7 @@ const TodoList = ({ list }) => {
   const { id, title, items } = list;
 
   return (
-    <div className="todo-list col-sm-4">
+    <div className="todo-list col-sm-6 col-md-4">
       <div className="todo-list-heading">
         <h2>{title}</h2>
         <div className="cross-icon" onClick={() => dispatch(deleteList(id))}>

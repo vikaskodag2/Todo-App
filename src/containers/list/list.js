@@ -12,7 +12,7 @@ const List = () => {
   return (
     <>
       <section>
-        <div className="container todo-container">
+        <div className="container m-0 todo-container">
           {lists.map((list) => {
             return <TodoList key={list.id} list={list} />;
           })}

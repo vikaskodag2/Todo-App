@@ -27,7 +27,7 @@ const AddTodoList = () => {
   }, []);
 
   return (
-    <div className="add-list-card col-sm-4">
+    <div className="add-list-card col-sm-6 col-md-4">
       <input
         className="add-list-input"
         placeholder="Enter list title..."

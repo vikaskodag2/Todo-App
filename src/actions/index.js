@@ -26,3 +26,10 @@ export const addList = (title) => ({
     listTitle: title,
   },
 });
+
+export const deleteList = (listId) => ({
+  type: DELETE_LIST,
+  payload: {
+    listId,
+  },
+});

@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import AddTodoList from "../../components/addTodoList";
+import TodoList from "../../components/todoList";
 import "./list.css";
 
 const List = () => {
@@ -11,11 +12,10 @@ const List = () => {
   return (
     <>
       <section>
-        <div className="container">
+        <div className="container todo-container">
           {lists.map((list) => {
-            return <List key={list.id} list={list} />;
+            return <TodoList key={list.id} list={list} />;
           })}
-          <p>{`You have ${lists.length} lists.`}</p>
           <AddTodoList />
         </div>
       </section>

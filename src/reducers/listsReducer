@@ -15,7 +15,7 @@ const listsReducer = (state = [], action) => {
     }
 
     case DELETE_LIST: {
-      return [...state].filter((list) => list.id !== action.payload);
+      return [...state].filter((list) => list.id !== action.payload.listId);
     }
 
     case ADD_ITEM: {

@@ -9,3 +9,8 @@ body {
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
+.container .cross-icon {
+  margin-left: auto;
+  cursor: pointer;
+}

@@ -24,3 +24,4 @@ Your app is ready to be deployed!
 
  - https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9
  - https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
+ - https://dmitripavlutin.com/react-throttle-debounce/

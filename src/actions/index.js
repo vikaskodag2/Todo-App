@@ -1,4 +1,10 @@
-import { ADD_LIST, DELETE_LIST, ADD_ITEM, DELETE_ITEM } from "./types";
+import {
+  ADD_LIST,
+  DELETE_LIST,
+  ADD_ITEM,
+  DELETE_ITEM,
+  UPDATE_LISTS,
+} from "./types";
 import { v4 as uuid } from "uuid";
 
 export const addItem = (newItem, newItemDesc, listId) => ({
@@ -31,5 +37,14 @@ export const deleteList = (listId) => ({
   type: DELETE_LIST,
   payload: {
     listId,
+  },
+});
+
+export const updateLists = (data, curListId) => ({
+  type: UPDATE_LISTS,
+  payload: {
+    oldListId: data.listId,
+    curListId,
+    todoItem: data,
   },
 });

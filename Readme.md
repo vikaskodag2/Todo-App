@@ -1,6 +1,10 @@
 # Project Management Dashboard
 A Project Management Dashboard to help keep track of project management activities. The activities of various types are listed as cards categorized into list.
 
+# To Setup the Project locally run
+### `npm i`
+### `npm run dev`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -25,3 +29,4 @@ Your app is ready to be deployed!
  - https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9
  - https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
  - https://dmitripavlutin.com/react-throttle-debounce/
+ - https://www.w3schools.com/html/html5_draganddrop.asp

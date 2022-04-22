@@ -3,7 +3,6 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin: 5px;
 }
 
 .add-todo-item-card .add-todo-item-input {

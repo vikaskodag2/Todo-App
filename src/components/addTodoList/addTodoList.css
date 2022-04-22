@@ -5,6 +5,9 @@
   flex-direction: column;
   justify-content: center;
   border: 10px solid #F6F9FB;
+  height: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .add-list-card .add-list-input {

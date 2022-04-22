@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import debounce from "lodash.debounce";
+import debounce from "lodash/debounce";
 
 import { addList } from "../../actions";
 import "./addTodoList.css";

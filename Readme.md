@@ -30,3 +30,4 @@ Your app is ready to be deployed!
  - https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
  - https://dmitripavlutin.com/react-throttle-debounce/
  - https://www.w3schools.com/html/html5_draganddrop.asp
+ - https://egghead.io/lessons/javascript-redux-persisting-the-state-to-the-local-storage

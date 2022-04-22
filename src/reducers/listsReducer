@@ -54,8 +54,6 @@ const listsReducer = (state = [], action) => {
       const { oldListId, curListId, todoItem } = action.payload;
       delete todoItem.listId;
 
-      // return state;
-
       return [...state].map((list) => {
         if (list.id === oldListId) {
           list.items = list.items.filter((item) => item.id !== todoItem.id);
